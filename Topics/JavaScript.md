@@ -5,4 +5,8 @@ description: This is just Javascript page
 ---
 # JavaScript  
 
-- Execution Context (실행문맥)
+<details>
+  - <summery> Execution Context (실행문맥) </summery>
+
+  내용~ 
+</details>
