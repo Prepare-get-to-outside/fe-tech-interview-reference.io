@@ -4,9 +4,6 @@
 
 
 ## Topic
-- [JavaScript_TEST]("./Topics/JavaScript.html")
+- [JavaScript_TEST](./Topics/JavaScript.html)
 - <a href="./Topics/JavaScript.html"> JavaScript </a>
 - <a href="./Topics/CSS.html"> CSS </a>
-
-
-[주소에 대한 설명](http://www.google.co.kr)
