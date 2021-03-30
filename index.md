@@ -1,6 +1,8 @@
 ## Frontend Tech interview reference 
 
-<a href="./javascript.html">JAVASCRIPT </a>
+<a href="./javascript.md">JAVASCRIPT </a>
+
+<a href="./CSS.md">CSS </a>
 
 ### Markdown
 
