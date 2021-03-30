@@ -7,5 +7,3 @@
 <a href="./javascript.md"> JAVASCRIPT </a>
 
 <a href="./CSS.md"> CSS </a>
-
-### Jekyll Themes
