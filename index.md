@@ -4,7 +4,7 @@
 
 
 ## Topic
-- <a href="./Topics/JavaScript.html"> JavaScript </a>
+- <a href="./Topics/JavaScript2.html"> JavaScript </a>
 - <a href="./Topics/CSS.html"> CSS </a>
 
 
