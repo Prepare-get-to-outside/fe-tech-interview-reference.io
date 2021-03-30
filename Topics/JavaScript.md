@@ -6,7 +6,7 @@ description: This is just Javascript page
 # JavaScript  
 
 <details>
-  - <summery> Execution Context (실행문맥) </summery>
+  - <summary> Execution Context (실행문맥) </summary>
 
   내용~ 
 </details>
