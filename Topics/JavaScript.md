@@ -12,7 +12,7 @@
 </ul>
 
 
-<details>
+- <details>
   <summary> var, let, const 차이점에 대해 설명해보세요 </summary>
   <div markdown="1">
   차이점은..!
