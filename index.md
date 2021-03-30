@@ -2,7 +2,7 @@
 
 
 ## Pages
-<a href="./javascript.md"> JAVASCRIPT </a>
+<a href="./javascript.html"> JAVASCRIPT </a>
 
 <a href="./CSS.md"> CSS </a>
 
