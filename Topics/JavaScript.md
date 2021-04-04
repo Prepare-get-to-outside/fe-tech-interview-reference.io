@@ -1,14 +1,10 @@
 # JavaScript  
 
-## Execution Context (실행문맥) 에 대해 설명해주세요.
-<div markdown="1">
-     - markdown 인식을위해 markdown = "1" 삽입 
-</div>
+- Execution Context (실행문맥) 에 대해 설명해주세요.
+
 
 ## var, let, const 차이점에 대해 설명해보세요 
-<div markdown="1">
-    차이점은..!
-</div>
+
 
 ## IIFE(즉시실행함수)에 대해 설명해주세요. 
 - 최초 한번 선언 동시와 함께 실행되는 함수<br>
@@ -16,11 +12,10 @@
 - 예시로, jQuery 경우 IIFE로 선언되어 같은 변수명을 사용해도 오염되지 않음.
 
 ## 호이스팅 정의에 대해 설명해주세요. 
-<details>
 - 선언부분이 최상단으로 끌어올려지는(hoist) 현상<br>
 - 함수 선언이 실행하는 부분보다 뒤에 있더라도 함수선언을 ‘끌어오리는 것(hoist)’이다.<br>
 - 자바스크립트 변수 생성과 초기화 작업이 분리되어 진행되므로 가능하다.
-</details>
+
 
 ## SSR vs CSR 
 - <em>Server Side Rendering (서버에서 렌더링)</em><br>
