@@ -33,11 +33,11 @@
 <summary> SSR vs CSR </summary>
 <details>
      <div markdown="1">
-          - Server Side Rendering (서버에서 렌더링)
+          - <em>Server Side Rendering (서버에서 렌더링)</em><br>
                - 코드 다운로드 기다리지 않고 서버에서 보여진 HTML 미리 준비해 클라이언트에게 응답 (속도가 빠르다.)<br>
                - 요청 시마다 서버에서 처리하여 새로고침으로 응답<br>
                - 각 페이지마다 고유의 URL이 존재하므로 history 관리 및 검색엔진최적화(SEO)에 유리하다.<br>
-          - Client Side Rendering (클라이언트 렌더링)
+          - <em>Client Side Rendering (클라이언트 렌더링)</em><br>
                - 최초에 한번 전체 페이지 로딩이후 요청 올 때마다 클라이언트가 해석하고 렌더링한다.<br>
                - URL을 변경시키지 않으므로 history 관리가 동작하지 않기 때문에 SEO 이슈가 있다.
      </div>
