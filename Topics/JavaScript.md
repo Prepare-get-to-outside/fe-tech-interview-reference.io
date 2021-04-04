@@ -13,13 +13,11 @@
 </div>
 
 <summary> IIFE(즉시실행함수)에 대해 설명해주세요. </summary>
-<details>
      <div markdown="1">
           - 최초 한번 선언 동시와 함께 실행되는 함수<br>
           - 라이브러리 간 변수명 충돌 예방 (함수/ 변수 SCOPE)<br>
           - 예시로, jQuery 경우 IIFE로 선언되어 같은 변수명을 사용해도 오염되지 않음.
      </div>
-</details>
 
 <summary> 호이스팅 정의에 대해 설명해주세요. </summary>
 <details>
