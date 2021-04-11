@@ -3,6 +3,8 @@
 ## Topic
 - [JavaScript](./Topics/JavaScript.html)
 - [CSS](./Topics/CSS.html)
+- [HTML](./Topics/HTML.html)
+- [WEB](./Topics/WEB.html)
 
 
 ### Tips
