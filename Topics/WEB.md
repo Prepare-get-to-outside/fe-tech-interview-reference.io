@@ -10,3 +10,4 @@
   - DOM tree 와 CSSOM 을 사용해 화면에 보여지게될 노드들로 구성되어있는 Render Tree를 생성한다.
   - Layout 구성 단계: Render Tree에 구성된 노드들이 실제로 보여질 위치와 크기를 계산한여, 렌더 트리를 배치한다.
   - Paint 단계: 구성된 Layout기반으로 UI 백엔드를 통해 화면에 출력한다.
+![Image](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/render-tree-construction.png?hl=ko)
