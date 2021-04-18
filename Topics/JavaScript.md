@@ -76,3 +76,43 @@
 - 이벤트루프를 통해 콜스택이 비었을 경우 실행한다.
 - 비동기 처리를 위해 Promise, Async Await 를 사용 할 수 있다.
 
+### `AMD`와 `CommonJS`는 무엇이고, 이것들에 대해 어떻게 생각하시나요?
+- JS 파일간의 의존성을 어떻게 갖게 할지 정하는 것이다. 일반적으로 client(브라우저)에서는 AMD 가 server에서는 commonJS가 적합하지만, 두 스펙 모두 server, client 환경에서 사용이 가능하다. es6는 브라우저 단에서 사용이 가능하나, 호환성 문제로 바벨을 통한 컴파일링이 필요하다.
+- 자바스크립트의 모듈 시스템이 기존에는 HTML에서 <script> 태그를 이용하여 js파일들을 불러왔다. 서로 다른 파일임에도 불구하고 서로가 의존적이며, 파일 로드하는 순서가 중요했었다. 
+
+ 이러한 점을 보완하기 위해 등장한것이 모듈 시스템이다. 외부에서 사용할 수 있게 특정 함수나 오브젝트 등을 모듈화 하고, 해당 모듈을 사용하려는 쪽에서는 필요한 모듈만 불러와서 사용하면 된다. 
+
+ 모듈을 정의하기 위한 문법에는 여러가지가 있다. AMD, CommonJS, ES6등이 있다.
+-  **CommonJS**
+: javascript 를 브라우저 뿐만 아니라 **서버사이드** 애플리케이션이나 **데스크톱** 애플리케이션에서도 사용하려고 조직한 자발적 워킹 그룹이다. `Common` 은 Javascript를 브라우저 에서만 사용하는 것이 아니라 일반적인 범용 언어로 사용할 수 있도록 하겠다는 의지를 나타내고 있는 것이다.  (Node.js, curl.js 등)
+	- 내보내기(정의) : `export` , `module.exports`
+        - 가져오기(사용) : `require` , `require.define() (서버 모듈을 브라우저에서 비동기적으로 사용)`
+        - CommonJS 모듈화는 세부분으로 이루어진다.
+            - 스코프(Scope) : 모든 모듈은 자신만의 독립적인 실행영역이 있어야한다.
+            - 정의(Definition) : 모듈 정의는 exports 객체를 이용한다.
+            - 사용(Usage) : 모듈 사용은 require 함수를 이용한다.
+
+- **AMD** (Asynchronus Module Definition)
+: 비동기 상황에도 JavaScript 모듈을 쓰기 위해 CommonJS에서 논의 하다가 합의점을 이루지 못하고 독립한 그룹. 브라우저 내에서의 실행에 중점을 둠 (Require JS,, curlJS 등)
+    - 필요한 파일이 모두 로컬 디스크에 있어 바로 볼 수 있는 상황 (서버사이드) 에서는 CommonJS 명세가 AMD 보다 더 간결 하다. 반면 필요한 파일을 네트워크 통해서 받아야 하는 경우 AMD 가 더 유연한 환경을 제공한다.
+    - javascript 는 파일 스코프가 따로 존재하지 않기 때문에 define() 함수 로 파일 스코프의 역할을 대신한다.
+
+- **ES6**
+: 브라우저 호환성 문제로 일반적으로 babel을 통해 commonJS 로 컴파일 한다.
+    - reference :[https://d2.naver.com/helloworld/12864](https://d2.naver.com/helloworld/12864) 
+    [https://velog.io/@ckdgus2246/프론트엔드-면접-질문-정리-JS-2-CommonJS-AMD](https://velog.io/@ckdgus2246/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EB%A9%B4%EC%A0%91-%EC%A7%88%EB%AC%B8-%EC%A0%95%EB%A6%AC-JS-2-CommonJS-AMD)
+    
+### (함수 선언방식) 다음 코드의 차이점은?
+```jsx
+function Person(){} // 함수 선언식 - Function Declarations
+var person = Person() //함수 표현식 - Function Expressions
+var person = new Person() //함수 생성자 
+```
+
+- 함수 선언식 : 함수를 선언하고 함수 이름을 호출하는 방법
+- 함수 표현식 : 함수를 변수에 저장하고, 변수를 통해 함수를 사용하는 방법
+- 함수 생성자 :  기본 내장 생성자 함수로 부터 생성된 객체이다. 생성자 함수로 생성한 객체들이 프로퍼티와 메서드를 공유하기 위해 prototype 을 이용 할 수 있다.
+    - new Function(arg1, arg2, ... argN, functionBody)
+- 함수 선언식과 함수 표현식의 차이점은 **호이스팅**이다.
+    - 함수 선언으로 생성된 함수는 함수가 정의 되기 전에 실행이 가능하며, 함수 표현식은 그렇지 않다.
+
